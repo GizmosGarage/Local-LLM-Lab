@@ -1,0 +1,60 @@
+{
+    "model": "ministral3-8b",
+    "tests": [
+        {
+            "test": "explanation",
+            "prompt": "Explain what inference means in machine learning in two sentences.",
+            "answer": "In machine learning, **inference** refers to the process of using a trained model to make predictions or decisions on new, unseen data by applying what it has learned from the training phase. It involves interpreting input patterns to output meaningful results, such as classifications, regressions, or probabilities, without further adjustments to the model.",
+            "prompt_tokens": 547,
+            "completion_tokens": 66,
+            "total_tokens": 613,
+            "prompt_tokens_per_second": 57.807970376955524,
+            "generation_tokens_per_second": 15.563740220583693,
+            "total_request_seconds": 13.643
+        },
+        {
+            "test": "reasoning",
+            "prompt": "A farmer has 17 sheep. All but 9 run away. How many sheep remain? Explain your answer briefly.",
+            "answer": "The answer is **9 sheep**.\n\nHere's the explanation:\n- \"All but 9\" means that 9 sheep are **not** running away.\n- So, 9 sheep remain.",
+            "prompt_tokens": 560,
+            "completion_tokens": 40,
+            "total_tokens": 600,
+            "prompt_tokens_per_second": 62.16852933571928,
+            "generation_tokens_per_second": 14.21361533146151,
+            "total_request_seconds": 11.756
+        },
+        {
+            "test": "coding",
+            "prompt": "Write a Python function named is_even that returns True if an integer is even and False otherwise. Give only the code.",
+            "answer": "```python\ndef is_even(n: int) -> bool:\n    return n % 2 == 0\n```",
+            "prompt_tokens": 560,
+            "completion_tokens": 26,
+            "total_tokens": 586,
+            "prompt_tokens_per_second": 62.381926886376554,
+            "generation_tokens_per_second": 15.255651150855812,
+            "total_request_seconds": 10.62
+        },
+        {
+            "test": "instruction_following",
+            "prompt": "Give exactly three benefits of running an LLM locally. Use three bullet points and no introduction.",
+            "answer": "- **Privacy & Data Security**: Running an LLM locally ensures sensitive or proprietary data never leaves your device, reducing risks of leaks, breaches, or third-party access.\n\n- **Offline Functionality**: No internet connection is required, enabling use in restricted environments (e.g., airplanes, remote locations) or during downtime without sacrificing performance.\n\n- **Customization & Control**: Fine-tune the model for specific tasks without relying on cloud APIs, reduce latency, and adapt the system to comply with internal policies or ethical guidelines.",
+            "prompt_tokens": 554,
+            "completion_tokens": 111,
+            "total_tokens": 665,
+            "prompt_tokens_per_second": 61.35567240943947,
+            "generation_tokens_per_second": 15.429159259501347,
+            "total_request_seconds": 16.163
+        },
+        {
+            "test": "technical_explanation",
+            "prompt": "Explain the difference between RAM and VRAM in no more than four sentences.",
+            "answer": "**RAM (Random Access Memory)** is your computer\u2019s general-purpose memory used by the CPU for running applications, operating systems, and temporary data storage.\n\n**VRAM (Video Random Access Memory)** is a specialized type of RAM dedicated *only* to graphics processing, storing data for the GPU to render images, textures, and frames efficiently.\n\nWhile both are fast and volatile (cleared when powered off), **VRAM is faster and more limited in capacity** than RAM, as it directly impacts graphical performance.\n\nThink of RAM as your computer\u2019s workspace and VRAM as the GPU\u2019s dedicated \"drawing board.\"",
+            "prompt_tokens": 551,
+            "completion_tokens": 124,
+            "total_tokens": 675,
+            "prompt_tokens_per_second": 61.908637681888926,
+            "generation_tokens_per_second": 15.4186057443708,
+            "total_request_seconds": 16.882
+        }
+    ]
+}

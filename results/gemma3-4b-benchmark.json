@@ -1,0 +1,60 @@
+{
+    "model": "gemma3-4b",
+    "tests": [
+        {
+            "test": "explanation",
+            "prompt": "Explain what inference means in machine learning in two sentences.",
+            "answer": "In machine learning, inference is the process of using a trained model to make predictions or decisions on new, unseen data. Essentially, it\u2019s applying the knowledge learned during training to solve a real-world problem by generating outputs based on input data.",
+            "prompt_tokens": 20,
+            "completion_tokens": 51,
+            "total_tokens": 71,
+            "prompt_tokens_per_second": 31.926696305283073,
+            "generation_tokens_per_second": 89.38627384378854,
+            "total_request_seconds": 1.19
+        },
+        {
+            "test": "reasoning",
+            "prompt": "A farmer has 17 sheep. All but 9 run away. How many sheep remain? Explain your answer briefly.",
+            "answer": "There are 9 sheep remaining. \n\nThe problem states \"all but 9 run away.\" This means that 9 sheep *didn't* run away, and therefore they are the ones that remain.",
+            "prompt_tokens": 34,
+            "completion_tokens": 44,
+            "total_tokens": 78,
+            "prompt_tokens_per_second": 233.63041043365928,
+            "generation_tokens_per_second": 88.54222434540527,
+            "total_request_seconds": 0.645
+        },
+        {
+            "test": "coding",
+            "prompt": "Write a Python function named is_even that returns True if an integer is even and False otherwise. Give only the code.",
+            "answer": "```python\ndef is_even(n):\n  \"\"\"\n  Returns True if an integer is even and False otherwise.\n  \"\"\"\n  return n % 2 == 0\n```",
+            "prompt_tokens": 34,
+            "completion_tokens": 42,
+            "total_tokens": 76,
+            "prompt_tokens_per_second": 234.41162681669007,
+            "generation_tokens_per_second": 88.93419953797599,
+            "total_request_seconds": 0.621
+        },
+        {
+            "test": "instruction_following",
+            "prompt": "Give exactly three benefits of running an LLM locally. Use three bullet points and no introduction.",
+            "answer": "*   **Enhanced Privacy:** Data doesn't leave your device, minimizing the risk of exposure or third-party access.\n*   **Offline Functionality:** Operates without an internet connection, useful in areas with limited connectivity.\n*   **Reduced Latency:** Faster response times due to direct processing on your hardware, eliminating network delays.",
+            "prompt_tokens": 28,
+            "completion_tokens": 71,
+            "total_tokens": 99,
+            "prompt_tokens_per_second": 202.85445193073969,
+            "generation_tokens_per_second": 89.3129410623902,
+            "total_request_seconds": 0.937
+        },
+        {
+            "test": "technical_explanation",
+            "prompt": "Explain the difference between RAM and VRAM in no more than four sentences.",
+            "answer": "RAM (Random Access Memory) is your computer's main working memory, used for running applications and storing data the CPU needs quickly. VRAM (Video RAM) is specifically dedicated to your graphics card, holding textures, frame buffers, and other data required for rendering images and videos. Think of RAM as the general-purpose memory and VRAM as the memory solely for the graphics processor.  Essentially, both contribute to your computer's performance, but they serve distinct roles.",
+            "prompt_tokens": 24,
+            "completion_tokens": 97,
+            "total_tokens": 121,
+            "prompt_tokens_per_second": 173.9672506650623,
+            "generation_tokens_per_second": 89.2341755738176,
+            "total_request_seconds": 1.229
+        }
+    ]
+}

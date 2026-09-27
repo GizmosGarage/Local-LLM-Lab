@@ -1,0 +1,22 @@
+[
+    {
+        "name": "explanation",
+        "prompt": "Explain what inference means in machine learning in two sentences."
+    },
+    {
+        "name": "reasoning",
+        "prompt": "A farmer has 17 sheep. All but 9 run away. How many sheep remain? Explain your answer briefly."
+    },
+    {
+        "name": "coding",
+        "prompt": "Write a Python function named is_even that returns True if an integer is even and False otherwise. Give only the code."
+    },
+    {
+        "name": "instruction_following",
+        "prompt": "Give exactly three benefits of running an LLM locally. Use three bullet points and no introduction."
+    },
+    {
+        "name": "technical_explanation",
+        "prompt": "Explain the difference between RAM and VRAM in no more than four sentences."
+    }
+]
