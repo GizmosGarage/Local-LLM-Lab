@@ -1,0 +1,11 @@
+Gemma 3 4B Benchmark
+
+Quantization: Q4_K_M
+GPU: AMD Radeon RX 5700 XT
+
+Context: 27392 tokens
+GPU layers offloaded: 35/35
+Model VRAM: 2368.18 MiB
+
+Prompt speed: 181.3 t/s
+Generation speed: 85.8 t/s

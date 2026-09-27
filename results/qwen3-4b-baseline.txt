@@ -1,0 +1,11 @@
+Qwen3-4B Benchmark
+
+Quantization: Q4\_K\_M
+GPU: AMD Radeon RX 5700 XT
+
+Context: 27392 tokens
+GPU layers offloaded: 37/37
+Model VRAM: 2375.91 MiB
+
+Prompt speed: 280.7 t/s
+Generation speed: 93.6 t/s

@@ -1,0 +1,11 @@
+Ministral 3 8B Benchmark
+
+Quantization: Q4_K_M
+GPU: AMD Radeon RX 5700 XT
+
+Context: 27392 tokens
+GPU layers offloaded: 25/35
+Model VRAM: 3398.92 MiB
+
+Prompt speed: 58.1 t/s
+Generation speed: 14.6 t/s
