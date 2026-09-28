@@ -1,0 +1,28 @@
+{
+    "qwen3-4b": {
+        "parameters": "4B",
+        "quantization": "Q4_K_M",
+        "context": 27392,
+        "gpu": "AMD Radeon RX 5700 XT",
+        "gpu_layers": "37/37",
+        "model_vram_mib": 2375.91
+    },
+
+    "gemma3-4b": {
+        "parameters": "4B",
+        "quantization": "Q4_K_M",
+        "context": 27392,
+        "gpu": "AMD Radeon RX 5700 XT",
+        "gpu_layers": "35/35",
+        "model_vram_mib": 2368.18
+    },
+
+    "ministral3-8b": {
+        "parameters": "8B",
+        "quantization": "Q4_K_M",
+        "context": 27392,
+        "gpu": "AMD Radeon RX 5700 XT",
+        "gpu_layers": "25/35",
+        "model_vram_mib": 3398.92
+    }
+}
