@@ -1,0 +1,4 @@
+model,average_prompt_tokens_per_second,average_generation_tokens_per_second,average_request_seconds
+gemma3-4b,205.82,86.72,0.59
+ministral3-8b,62.74,15.34,11.52
+qwen3-4b,224.35,94.03,0.52
