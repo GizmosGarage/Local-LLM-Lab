@@ -1,22 +1,65 @@
 [
     {
-        "name": "explanation",
-        "prompt": "Explain what inference means in machine learning in two sentences."
+        "name": "basic_explanation",
+        "category": "explanation",
+        "prompt": "Explain what inference means in machine learning in exactly two sentences.",
+        "check": "sentence_count",
+        "expected": 2
     },
     {
-        "name": "reasoning",
-        "prompt": "A farmer has 17 sheep. All but 9 run away. How many sheep remain? Explain your answer briefly."
+        "name": "sheep_reasoning",
+        "category": "reasoning",
+        "prompt": "A farmer has 17 sheep. All but 9 run away. How many sheep remain? Give only the number.",
+        "check": "exact",
+        "expected": "9"
     },
     {
-        "name": "coding",
-        "prompt": "Write a Python function named is_even that returns True if an integer is even and False otherwise. Give only the code."
+        "name": "arithmetic",
+        "category": "reasoning",
+        "prompt": "Calculate 37 * 24. Give only the number.",
+        "check": "exact",
+        "expected": "888"
+    },
+    {
+        "name": "python_even",
+        "category": "coding",
+        "prompt": "Write a Python function named is_even that accepts one integer and returns True if it is even and False otherwise. Give only the code.",
+        "check": "contains",
+        "expected": "def is_even"
     },
     {
         "name": "instruction_following",
-        "prompt": "Give exactly three benefits of running an LLM locally. Use three bullet points and no introduction."
+        "category": "instruction_following",
+        "prompt": "Give exactly three benefits of running an LLM locally. Use exactly three bullet points and no introduction.",
+        "check": "bullet_count",
+        "expected": 3
+    },
+    {
+        "name": "information_extraction",
+        "category": "extraction",
+        "prompt": "Read this sentence: 'Jordan bought 4 GPUs on Tuesday for $275 each.' Respond only with the total amount Jordan spent.",
+        "check": "exact",
+        "expected": "$1100"
+    },
+    {
+        "name": "classification",
+        "category": "classification",
+        "prompt": "Classify this review as POSITIVE, NEGATIVE, or NEUTRAL: 'The program works, but it is slower than I expected.' Respond with only one of those three words.",
+        "check": "exact",
+        "expected": "NEUTRAL"
     },
     {
         "name": "technical_explanation",
-        "prompt": "Explain the difference between RAM and VRAM in no more than four sentences."
+        "category": "technical",
+        "prompt": "Explain the difference between RAM and VRAM in no more than four sentences.",
+        "check": "manual",
+        "expected": null
+    },
+    {
+        "name": "summarization",
+        "category": "summarization",
+        "prompt": "Summarize this in one sentence: Quantization reduces the numerical precision used to store model weights. This can dramatically reduce memory requirements and sometimes improve inference speed, although lower precision can also reduce model quality.",
+        "check": "manual",
+        "expected": null
     }
 ]

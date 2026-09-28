@@ -85,8 +85,11 @@ for test in prompts:
     timings = result.get("timings", {})
 
     benchmark_result = {
-        "test": test["name"],
-        "prompt": test["prompt"],
+   	"test": test["name"],
+  	"category": test["category"],
+  	"check": test["check"],
+  	"expected": test["expected"],
+  	"prompt": test["prompt"],
         "answer": answer,
         "prompt_tokens": usage.get("prompt_tokens"),
         "completion_tokens": usage.get("completion_tokens"),
